@@ -1,2 +1,0 @@
-# SiteVitals usa solo la libreria standard di Python: nessuna dipendenza da installare.
-# Richiede Python 3.8 o superiore.
