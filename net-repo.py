@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SiteVitals — scanner passivo di salute, sicurezza e compliance per siti web.
+net-repo — scanner passivo di salute, sicurezza e compliance per siti web.
 
 Usa SOLO la libreria standard di Python (nessun pip, nessuna installazione).
 Esegue solo richieste HTTP/HTTPS passive (GET/HEAD) + lettura certificato TLS.
@@ -11,8 +11,8 @@ USO CONSENTITO: esclusivamente su domini di tua proprietà o per cui hai
 autorizzazione scritta. La scansione di infrastruttura altrui senza permesso
 può costituire reato (in Italia art. 615-ter c.p.).
 
-    python3 sitevitals.py https://tuodominio.it
-    python3 sitevitals.py https://tuodominio.it --max-pages 40 --out report.html
+    python3 net-repo.py https://tuodominio.it
+    python3 net-repo.py https://tuodominio.it --max-pages 40 --out report.html
 """
 
 import argparse
@@ -27,7 +27,7 @@ import urllib.request
 from collections import deque
 from html.parser import HTMLParser
 
-UA = "SiteVitals/0.1 (+self-audit)"
+UA = "net-repo/0.1 (+self-audit)"
 TIMEOUT = 12
 
 # ---------------------------------------------------------------------------
